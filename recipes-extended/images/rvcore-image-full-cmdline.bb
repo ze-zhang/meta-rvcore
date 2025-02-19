@@ -22,6 +22,8 @@ IMAGE_INSTALL:append = "e2fsprogs \
                         binutils \
                         vim \
                         mariadb \
+                        perl \
+                        opencv \
                         time \
                         ccache \
                         bison \
@@ -32,7 +34,6 @@ IMAGE_INSTALL:append = "e2fsprogs \
                         tzdata \
                         ldd \
                         gdb \
-                        gdbserver \
                         numactl \
                         graphviz \
                         lcov \
@@ -43,7 +44,7 @@ IMAGE_INSTALL:append = "e2fsprogs \
                         acl \
                         redis \
                         tcl \
-                        openssh-misc \
+                        openssh \
 "
 
 IMAGE_ROOTFS_EXTRA_SPACE = "54194304"

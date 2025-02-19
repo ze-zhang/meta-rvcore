@@ -40,11 +40,16 @@ export BASH_SOURCE="poky/oe-init-build-env"
 echo "Adding layers"
 bitbake-layers add-layer ../meta-openembedded/meta-oe
 bitbake-layers add-layer ../meta-openembedded/meta-python
+bitbake-layers add-layer ../meta-openembedded/meta-perl
 bitbake-layers add-layer ../meta-openembedded/meta-multimedia
 bitbake-layers add-layer ../meta-openembedded/meta-webserver
 bitbake-layers add-layer ../meta-openembedded/meta-networking
 bitbake-layers add-layer ../meta-riscv
 bitbake-layers add-layer ../meta-rvcore
+bitbake-layers add-layer ../meta-rvcore
+bitbake-layers add-layer ../meta-python-ai
+bitbake-layers add-layer ../meta-clang-revival
+bitbake-layers add-layer ../meta-clang
 
 # fix the configuration
 echo "Creating auto.conf"
