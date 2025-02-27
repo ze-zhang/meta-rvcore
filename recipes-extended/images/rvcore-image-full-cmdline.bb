@@ -34,7 +34,10 @@ IMAGE_INSTALL:append = "e2fsprogs \
                         tzdata \
                         ldd \
                         gdb \
+                        dpdk \
+                        libvirt \
                         numactl \
+                        openvswitch \
                         graphviz \
                         lcov \
                         libsdl2 \
@@ -45,6 +48,7 @@ IMAGE_INSTALL:append = "e2fsprogs \
                         redis \
                         tcl \
                         openssh \
+                        nodejs \
 "
 
 IMAGE_ROOTFS_EXTRA_SPACE = "54194304"
