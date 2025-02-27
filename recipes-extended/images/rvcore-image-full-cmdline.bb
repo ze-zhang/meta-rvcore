@@ -34,7 +34,10 @@ IMAGE_INSTALL:append = "e2fsprogs \
                         tzdata \
                         ldd \
                         gdb \
+                        dpdk \
+                        libvirt \
                         numactl \
+                        openvswitch \
                         graphviz \
                         lcov \
                         libsdl2 \
