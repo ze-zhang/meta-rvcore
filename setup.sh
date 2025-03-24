@@ -3,7 +3,7 @@
 
 DIR="build"
 MACHINE="qemuriscv64"
-DISTRO="poky-altcfg"
+DISTRO="rvcore-distro"
 CONFFILE="conf/auto.conf"
 # core-image-sato, corea-image-sato-sdk
 BITBAKEIMAGE="core-image-full-cmdline"
@@ -44,12 +44,15 @@ bitbake-layers add-layer ../meta-openembedded/meta-perl
 bitbake-layers add-layer ../meta-openembedded/meta-multimedia
 bitbake-layers add-layer ../meta-openembedded/meta-webserver
 bitbake-layers add-layer ../meta-openembedded/meta-networking
+bitbake-layers add-layer ../meta-openembedded/meta-filesystems
 bitbake-layers add-layer ../meta-riscv
 bitbake-layers add-layer ../meta-rvcore
 bitbake-layers add-layer ../meta-rvcore
 bitbake-layers add-layer ../meta-python-ai
 bitbake-layers add-layer ../meta-clang-revival
 bitbake-layers add-layer ../meta-clang
+bitbake-layers add-layer ../meta-virtualization
+bitbake-layers add-layer ../meta-python-ai
 
 # fix the configuration
 echo "Creating auto.conf"
@@ -73,7 +76,7 @@ EOF
 
 echo "To build an image run"
 echo "---------------------------------------------------"
-echo "bitbake core-image-full-cmdline"
+echo "bitbake rvcore-image-full-cmdline"
 echo "---------------------------------------------------"
 echo ""
 echo "Buildable machine info"

@@ -38,6 +38,7 @@ IMAGE_INSTALL:append = "e2fsprogs \
                         spdk \
                         openjdk \
                         libvirt \
+                        kubernetes \
                         numactl \
                         openvswitch \
                         graphviz \
@@ -46,6 +47,7 @@ IMAGE_INSTALL:append = "e2fsprogs \
                         libsdl2-dev \
                         libsdl2-staticdev \
                         qemu \
+                        docker-moby \
                         acl \
                         redis \
                         tcl \
