@@ -39,6 +39,7 @@ IMAGE_INSTALL:append = "e2fsprogs \
                         openjdk \
                         libvirt \
                         kubernetes \
+                        ncnn \
                         numactl \
                         openvswitch \
                         graphviz \
